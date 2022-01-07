@@ -29,15 +29,6 @@ async def get_num_blocks():
         return -1
 #initiate screen
 mylcd = I2C_LCD_driver.lcd()
-# countdown1 = 240
-# while countdown1 >= 0:
-#     if countdown1 >= 10:
-#         mylcd.lcd_display_string_pos("Starting in T-"+str(countdown1),1,1)
-#     else:
-#         mylcd.lcd_display_string_pos("Starting in T-0"+str(countdown1),1,1)
-# 
-#     countdown1 = countdown1-1
-#     time.sleep(1)
 
 def load_price_vars():
     #get 24 hour prices, block height, times from api, put in pandas df, calculate price change over the last day, return it all as strings
